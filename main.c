@@ -1,62 +1,68 @@
 // Solve The Problem for this code
+#include <stdio.h>
+#include <stdlib.h>
 
 
-const char* index_nilai(nilai) {
+const char* index_nilai(float nilai) {
     if (nilai >= 86) {
         return "A";
-    } 
+    }
     else if (nilai >= 76) {
         return "AB";
-    } 
+    }
     else if (nilai >= 66) {
         return "B";
-    } 
+    }
     else if (nilai >= 61) {
         return "BC";
-    } 
+    }
     else if (nilai >= 56) {
         return "C";
-    } 
+    }
     else if (nilai >= 41) {
         return "D";
-    } 
+    }
     else {
         return "E";
     }
 }
 
 
-float kalkulasi_ip(*matkul, int *sks, int n) {
-    
+    //fungsi untuk menghitung IP
+    float kalkulasi_ip(float *matkul, int *sks, int n) {
+    float totalNilai = 0.0;
+    int totalSKS = 0;
+
+
 
     for (int i = 0; i < n; i++) {
-        totalNilai += matkul[i] * sks[i];  
+        totalNilai += matkul[i] * sks[i];
         totalSKS += sks[i];
     }
 
-    return totalNilai / totalSKS; 
+    return totalNilai / totalSKS;
 }
 
 
 
 int main(){
     char nama[20];
+    int umur, NRP;
+    int n;
 
-
-    printf("ingfo nama: ");
+    printf("Masukkan nama: ");
     fgets(nama, sizeof(nama), stdin);
 
-    printf("P Umur: ");
+    printf("Umur: ");
     scanf("%d" , &umur);
 
-    printf("NRP dong biar tau: ");
-    scanf("%d" , &NRP);
+    printf("NRP : ");
+    scanf("%d", &NRP);
 
-    int n;
     printf("Jumlah matkul Semester ini berapa: ");
     scanf("%d", &n);
 
-    float *matkul = malloc(n * sizeof(int)); 
+    float *matkul = malloc(n * sizeof(float));
     int *sks = malloc(n * sizeof(int));
 
     for(int i = 0; i < n; i++){
@@ -84,7 +90,7 @@ int main(){
     printf("Indeks Prestasi (IP): %.2f (%s)\n", ip , index_nilai(ip));
 
 
-    free(matkul); 
+    free(matkul);
     free(sks);
     return 0;
 }
