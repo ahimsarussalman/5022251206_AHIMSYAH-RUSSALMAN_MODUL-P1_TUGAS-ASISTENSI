@@ -19,6 +19,8 @@ SETELAH ADA DEKLARASI VARIABEL
 
 SETELAH ADA DEKLARASI VARIABEL
 ![WhatsApp Image 2025-09-16 at 18 09 42_19ee0518](https://github.com/user-attachments/assets/54bf9bad-6be1-4e15-a6fb-9efa9b8606b5)
+<img width="508" height="433" alt="Screenshot 2025-09-17 111228" src="https://github.com/user-attachments/assets/fccaa0be-d18b-40ce-9d6c-2e45c4bed527" />
+<img width="752" height="346" alt="Screenshot 2025-09-17 111237" src="https://github.com/user-attachments/assets/3a382ac3-483f-4069-b343-4796359e191d" />
 
 #NOTE
 Apabila hasil perbaikan saya kurang bisa memenuhi ekspektasi mohon dimaafkan karena masih dalam masa belajar pemrograman 
