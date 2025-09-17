@@ -47,7 +47,8 @@ const char* index_nilai(float nilai) {
 
 int main(){
     char nama[20];
-    int umur, NRP;
+    int umur;
+    char NRP [10];
     int n;
 
     printf("Masukkan nama: ");
@@ -57,7 +58,7 @@ int main(){
     scanf("%d" , &umur);
 
     printf("NRP : ");
-    scanf("%d", &NRP);
+    scanf("%s", &NRP);
 
     printf("Jumlah matkul Semester ini berapa: ");
     scanf("%d", &n);
@@ -81,7 +82,7 @@ int main(){
 
     printf("\nNama: %s", nama);
     printf("Umur: %d \n", umur);
-    printf("NRP: %d \n" , NRP);
+    printf("NRP: %s \n" , NRP);
 
     for(int j = 0; j < n ; j++){
         printf("Indeks nilai matkul %d: %s\n", j + 1, index_nilai(matkul[j]));
